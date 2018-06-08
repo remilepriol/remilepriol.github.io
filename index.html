@@ -1,7 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Rémi Le Priol</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48368675-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div class="container">
+    <div class="row" style="padding:20px">
+        <div class="hidden-xs col-sm-3 col-md-2" id="sidebar" role="navigation" style="margin-top:180px">
+            <hr>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#publications" class=" active">Publications</a></li>
+                <li><a href="cv_academic.pdf" class="">Resume</a></li>
+                <li><a href="https://github.com/remilepriol" class="">Github</a></li>
+                <li><a href="#contact" class="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-10">
+            <div class="row">
+                <img src="img/portrait.jpg" class="pull-left" style="margin:20px 20px 20px 0; width:140px; height:140px; border-radius:100%">
+                <h1>Rémi Le Priol</h1>
+                <p class="lead">Ph.D. Student <br>MILA<br>
+                    Université de Montréal
+                </p>
+            </div>
+
+            <div class="row">
+                <hr>
+                <p> I am a PhD student at <a href="https://mila.quebec/en/">MILA</a> under the supervision of <a href="http://www.di.ens.fr/~slacoste/">Simon Lacoste-Julien</a>. I am interested in optimization for machine learning, structured prediction and generative models.
+                </p>
+
+
+                <p>I grew up in the suburb of Paris. I studied at  <a href="https://www.polytechnique.edu/">Ecole Polytechnique</a> (X2013), graduating with an engineering degree and a Master of Science (<a href="http://math.ens-paris-saclay.fr/version-francaise/formations/master-mva/">Master MVA</a>) in 2018.
+                </p>
+            </div>
+
+            <div class="row"><a name="publications"></a>
+                <h3>Publications</h3>
+
+                <p><strong>Adaptive Stochastic Dual Coordinate Ascent for Conditional Random Fields</strong><br>
+                    Rémi Le Priol, Ahmed Touati and Simon Lacoste-Julien<br>
+                    UAI 2018<br>
+                </p>
+                <p><strong>Adaptive Stochastic Dual Coordinate Ascent for Conditional Random Fields</strong><br>
+                    Rémi Le Priol, Ahmed Touati and Simon Lacoste-Julien<br>
+                    Optimization Workshop, NIPS 2017 <br>
+                </p>
+                <div class="btn-group-xs">
+                    <a href="https://arxiv.org/abs/1712.08577" class="btn btn-default">Article</a>
+                </div><br>
+            </div>
+
+            <div class="row">
+                <h3><a name="contact"></a>Contact</h3>
+                <hr>
+                <address>
+                    <strong>Rémi Le Priol</strong><br>
+                    Pavillon André-Aisenstadt<br>
+                    2920 Chemin de la Tour, office 3331<br>
+                    Montreal, QC<br>
+                    H3T 1J4 CANADA<br>
+                </address>
+                <a href="https://www.linkedin.com/in/r%C3%A9mi-le-priol-398a60a7/" style="text-decoration:none;">
+          <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+            <img src="img/linkedin.png" height="20" width="20" alt="See LinkedIn profile"
+                 style="vertical-align:middle;"
+                 border="0">
+          </span>
+                </a>
+                <a href="mailto:remi.le.priol@umontreal.ca" style="text-decoration:none;">
+          <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+            <img src="img/mail.png" height="20" width="20" alt="Send an email"
+                 style="vertical-align:middle;"
+                 border="0">
+          </span>
+                </a>
+                <a href="https://github.com/remilepriol" style="text-decoration:none;">
+          <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+            <img src="img/github.png" height="20" width="20" alt="Github repository"
+                 style="vertical-align:middle;"
+                 border="0">
+          </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2018</p>
+    </footer>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="offcanvas.js"></script>
+<script src="code.js"></script>
 </body>
 </html>
