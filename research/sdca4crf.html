@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SDCA4CRF project webpage">
+    <meta name="author" content="Remi Le Priol">
+
+    <title>SDCA4CRF</title>
+
+    <link href="./template_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./template_files/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body style="">
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted"> <center>
+            <text id="small-caps">SDCA4CRF</text>: Adaptive Stochastic Dual Coordinate Ascent for training Conditional Random Fields.
+        </center> </h3>
+      </div>
+
+        <p></p>
+
+      <div class="row">
+        <h3>People</h3>
+        <ul>
+            <li><a href="https://remilepriol.github.io/">Rémi Le Priol</a></li>
+            <li><a href="https://mila.quebec/en/person/alexandre-piche/">Alexandre Piché</a></li>
+            <li><a href="https://mila.quebec/en/person/touati-ahmed/">Ahmed Touati</a></li>
+            <li><a href="http://www.di.ens.fr/~slacoste/">Simon Lacoste-Julien</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <h3>Abstract</h3>
+        <p style="text-align: justify;">
+        This work investigates the training of conditional random fields (CRFs) via the stochastic dual coordinate ascent (SDCA) algorithm of Shalev-Shwartz and Zhang (2016). SDCA enjoys a linear convergence rate and a strong empirical performance for binary classification problems. However, it has never been used to train CRFs. Yet it benefits from an “exact” line search with a single marginalization oracle call, unlike previous approaches. In this paper, we adapt SDCA to train CRFs, and we enhance it with an adaptive non-uniform sampling strategy based on block duality gaps. We perform experiments on four standard sequence prediction tasks. SDCA demonstrates performances on par with the state of the art, and improves over it on three of the four datasets, which have in common the use of sparse features.</p>
+      </div>
+
+      <div class="row">
+        <h3>Paper</h3>
+             <p>
+             UAI 2018 (to be published). <br>
+             Presented at <a href="http://opt-ml.org/papers.html">OPT2017</a> (NIPS workshop)
+                 <a a="" href="https://arxiv.org/abs/1712.08577" class="btn btn-default">Article</a> <br>
+             </p>
+
+        <h4>BibTeX</h4>
+        <pre><tt>@inproceedings{sdca4crf2018lepriol,
+      author    = {Le Priol, R\'emi and Pich\'e, Alexandre and Lacoste-Julien, Simon},
+      title     = {Adaptive Stochastic Dual Coordinate Ascent for training Conditional Random Fields},
+      booktitle = {UAI},
+      year      = {2018}
+}</tt></pre>
+      </div>
+
+
+
+      <div class="row">
+          <h3>Reproducibility</h3>
+          <p>
+              We will release the code and datasets used for the paper on github soon.
+              We developped a Python-Numpy implementation of SDCA for training chain-structured conditional random field models with L2-regularization.
+              SDCA fares against optimization a wide class of algorithms developped by Mark Schmidt in the <a href="https://www.cs.ubc.ca/~schmidtm/Software/SAG4CRF.html">SAG4CRF</a> project.
+              We also used their preprocessed dataset.
+          </p>
+      </div>
+
+
+      <div class="row">
+        <h3>Copyright Notice</h3>
+        <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
+      </div>
+
+    <hr>
+    <footer>
+        <p>Last updated June 2018.</p>
+    </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+
+</div></body></html>
