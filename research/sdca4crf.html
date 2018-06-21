@@ -42,7 +42,6 @@
         <ul>
             <li><a href="https://remilepriol.github.io/">Rémi Le Priol</a></li>
             <li><a href="https://mila.quebec/en/person/alexandre-piche/">Alexandre Piché</a></li>
-            <li><a href="https://mila.quebec/en/person/touati-ahmed/">Ahmed Touati</a> (for the workshop version)</li>
             <li><a href="http://www.di.ens.fr/~slacoste/">Simon Lacoste-Julien</a></li>
         </ul>
       </div>
@@ -57,7 +56,8 @@
         <h3>Paper</h3>
              <p>
              UAI 2018 (to be published). <br>
-             Presented at <a href="http://opt-ml.org/papers.html">OPT2017</a> (NIPS workshop)
+             Presented at the NIPS workshop <a href="http://opt-ml.org/papers.html">OPT2017</a>
+                 (collaboration with <a href="https://mila.quebec/en/person/touati-ahmed/">Ahmed Touati</a>)
                  <a a="" href="https://arxiv.org/abs/1712.08577" class="btn btn-default">Article</a> <br>
              </p>
 
@@ -73,13 +73,28 @@
 
 
       <div class="row">
-          <h3>Reproducibility</h3>
-          <p>
-              We will release the code and datasets used for the paper on github soon.
-              We developped a Python-Numpy implementation of SDCA for training chain-structured conditional random field models with L2-regularization.
-              SDCA fares against optimization a wide class of algorithms developped by Mark Schmidt in the <a href="https://www.cs.ubc.ca/~schmidtm/Software/SAG4CRF.html">SAG4CRF</a> project.
-              We also used their preprocessed dataset.
-          </p>
+            <h3>Reproducibility</h3>
+            <p>
+            We will release the code and datasets used for the paper on github soon.
+            We developped a Python-Numpy implementation of SDCA for training chain-structured conditional random field models with L2-regularization.
+            SDCA fares against optimization a wide class of algorithms developped by Mark Schmidt in the <a href="https://www.cs.ubc.ca/~schmidtm/Software/SAG4CRF.html">SAG4CRF</a> project.
+            </p>
+
+            <p>
+            We reuse the experimental setup from SAG4CRF, with the same datasets and features.
+            We release pre-processed features (courtesy of <a href="https://www.cs.ubc.ca/~schmidtm/">Mark Schmidt</a>) with the code so as to reproduce training.
+            Original datasets can be found here:
+            </p>
+            <ul>
+                <li><a href=http://ai.stanford.edu/~btaskar/ocr/>
+                    Optical Character Recognition (OCR)</a></li>
+                <li><a href="https://www.clips.uantwerpen.be/conll2000/chunking/">
+                    CONLL2000 text chunking (CONLL)</a></li>
+                <li><a href="https://www.clips.uantwerpen.be/conll2002/ner/">
+                    CONLL2002 Named Entity Recognition (NER)</a></li>
+                <li><a href="https://catalog.ldc.upenn.edu/ldc99t42">
+                    Wall Street Journal Part Of Speech tagging (POS)</a></li>
+            </ul>
       </div>
 
 
@@ -94,11 +109,6 @@
     </footer>
 
     </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
   
 
 </div></body></html>
