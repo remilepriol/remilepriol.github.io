@@ -1,0 +1,38 @@
+hr {
+    border-color:#BBB
+}
+
+h4 {
+  margin-top: 4ex;
+}
+
+.container {
+    padding: 30px;
+    max-width: 600px;
+}
+
+.papers > div {
+  margin-bottom: 2em;
+  clear: both;
+}
+
+.papers .img {
+  overflow: auto;
+  text-align: center;
+  clear: left;
+}
+
+.papers .text {
+  vertical-align: middle;
+  //background-color: #eee;
+  width: 400px;
+  display: inline-block;
+}
+
+.papers img {
+  //vertical-align: middle;
+  margin: 10px;
+  width: 192px;
+  height: 128px;
+  display: inline-block;
+}
