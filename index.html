@@ -32,7 +32,9 @@
 
         <div class="">
             <div class="row" style="padding-left: 20px; padding-right: 20px">
+            <div class="img" style="float: left;">
                 <img src="img/portrait.jpg" class="pull-left" style="margin:20px 20px 20px 0; width:140px; height:140px; border-radius:100%">
+            </div>
                 <div class="column">
                     <h1>Rémi Le Priol</h1>
                     <p class="lead">
@@ -73,9 +75,8 @@
                 <a href="cv_academics.pdf" class="btn">Resume</a>
             </div>
 
-            <div class="row">
+            <div>
                 <hr>
-
                 <h4>About me</h4>
 
                 <p> I am now looking for a job applying my skills and technical appetite to the goal of preserving the conditions of human life on Earth.
@@ -93,8 +94,32 @@
                     Whether in or out of research, I enjoy truthfully relating to my fellow human beings, which often takes the form of acroyoga, or non-violent communication.
                 </p>
 
-                <div class="papers">
+
+
                 <h4>Some projects I care about</h4>
+                <script>
+                $(document).ready(function(){
+                  on_resize();
+                })
+
+                $(window).resize(function(){
+                  on_resize();
+                });
+
+                function on_resize() {
+                  if ($('.papers').width() < 600) {
+                    // image on top
+                    $('.papers .img').css('float', 'none');
+                    $('.papers .text').css('width', '100%');
+                  } else {
+                    // side by side
+                    $('.papers .img').css('float', 'left');
+                    $('.papers .text').css('width', ($('.papers').width() - 250) + 'px');
+                  }
+                }
+                </script>
+
+                <div class="papers">
                 <p>
                     <a href="https://remilepriol.github.io/dualityviz/">DualityViz</a> and
                     <a href="https://remilepriol.github.io/dualityviz/dual_snakes.html">DualSnakes</a>
@@ -112,13 +137,17 @@
                     During the year 2017 I worked on an optimization algorithm for a structured prediction model called CRF. Along the way I found out a way to systematically improve the convergence speed of the algorithm SDCA by sampling data points adaptively.
                 </p>
 
-                <p>
-                    <a href="https://github.com/remilepriol/bitstring-knitting">bitstring-knitting</a>: a visual inspection of distances applied to bit strings.<br />
-                <img src="img/hamming.png" class="center" style="width:140px; height:140px">
-                <img src="img/levdist.png" class="center" style="width:140px; height:140px">
-                <img src="img/jaccard.png" class="center" style="width:140px; height:140px">
-                <img src="img/wasserstein.png" class="center" style="width:140px; height:140px">
-                </p>
+                <div>
+                    <div class="text">
+                        <a href="https://github.com/remilepriol/bitstring-knitting">bitstring-knitting</a>: a visual inspection of distances applied to bit strings.
+                    </div>
+                    <div class="img">
+                        <img src="img/hamming.png" class="center" style="width:140px; height:140px">
+                        <img src="img/levdist.png" class="center" style="width:140px; height:140px">
+                        <img src="img/jaccard.png" class="center" style="width:140px; height:140px">
+                        <img src="img/wasserstein.png" class="center" style="width:140px; height:140px">
+                    </div>
+                </div>
                 </div>
 
             </div>

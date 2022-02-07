@@ -3,12 +3,12 @@ hr {
 }
 
 h4 {
-  margin-top: 4ex;
+  margin-top: 2ex;
 }
 
 .container {
-    padding: 30px;
-    max-width: 600px;
+    max-width: 700px;
+    margin: 3ex auto
 }
 
 .papers > div {
@@ -25,7 +25,6 @@ h4 {
 .papers .text {
   vertical-align: middle;
   //background-color: #eee;
-  width: 400px;
   display: inline-block;
 }
 
